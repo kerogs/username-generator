@@ -1,7 +1,11 @@
 <?php
+
+// ! deprecated
+
 function generatePseudo($useNumbers = false, $numbersRange=0, $useSymbols = false) {
     $numbers = '0123456789';
     $symbols = '!@#$%&*_+-=.?';
+    
     
     // TODO emoji pack
     $emoji = [""];
