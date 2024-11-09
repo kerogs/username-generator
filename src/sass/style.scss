@@ -79,6 +79,16 @@ main{
                 border-radius: 120px;
                 text-align: center;
                 cursor: pointer;
+
+                animation: .6s liSpawn forwards;
+                opacity: 0;
+
+                @for $i from 10 through 1 {
+                    &:nth-child(#{$i}){
+                        animation-delay: .1s * $i;
+                    }
+                }
+
                 &:hover{
                     background-color: transparentize($primary, .8);
                 }
@@ -91,6 +101,16 @@ main{
                 }
             }
         }
+    }
+}
+
+@keyframes liSpawn{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    } to{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -227,6 +247,8 @@ main{
     }
 }
 
+
+
 @keyframes githubSpawn{
     from{
         transform: translateY(-100%);
@@ -297,5 +319,49 @@ main{
     to{
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+
+
+.context-menu {
+    position: absolute;
+    text-align: center;
+
+    background-color: transparentize(lighten($background,30%), .9);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px;
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+        padding: 0;
+        overflow: hidden;
+
+
+        a{
+            text-decoration: none;
+
+            &:hover{
+                opacity: .6;
+            }
+
+            color: $primary;
+        }
+
+        li{
+            padding: 6px 12px;
+            color: $text;
+            border-radius: 6px;
+            &.title{
+                text-align: center;
+            }
+
+            &.github{
+                background-color: $red;
+            }
+        
+        }
     }
 }
