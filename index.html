@@ -23,14 +23,16 @@
     <meta property="og:url" content="https://kerogs.github.io/username-generator/index.html" />
     <meta property="og:title" content="Kerogs | Username Generator" />
     <meta property="og:description" content="simple open source nickname generator with lots of possibilities" />
-    <meta property="og:image" content="https://opengraph.githubassets.com/f1e8e80eb82be79fa08cba6d2820b489133b039aeb1794d2db6404f1be1755b3/kerogs/username-generator" />
+    <meta property="og:image"
+        content="https://opengraph.githubassets.com/f1e8e80eb82be79fa08cba6d2820b489133b039aeb1794d2db6404f1be1755b3/kerogs/username-generator" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://kerogs.github.io/username-generator/index.html" />
     <meta property="twitter:title" content="Kerogs | Username Generator" />
     <meta property="twitter:description" content="simple open source nickname generator with lots of possibilities" />
-    <meta property="twitter:image" content="https://opengraph.githubassets.com/f1e8e80eb82be79fa08cba6d2820b489133b039aeb1794d2db6404f1be1755b3/kerogs/username-generator" />
+    <meta property="twitter:image"
+        content="https://opengraph.githubassets.com/f1e8e80eb82be79fa08cba6d2820b489133b039aeb1794d2db6404f1be1755b3/kerogs/username-generator" />
 
     <!-- Theme-color -->
     <meta name="theme-color" content="#1d9be9" />
@@ -117,35 +119,52 @@
         <a href="https://github.com/kerogs/username-generator" target="_blank">
             <li class="github">Github</li>
         </a>
+        <li class="themes">
+            <select name="theme" id="">
+                <option value="classic-dark">Classic Dark</option>
+                <option value="kslabs-theme-dark">KsLabs Theme Dark</option>
+                <option value="kslabs-theme-light">KsLabs Theme Light</option>
+                <option value="lowpoly-theme">Low Poly Theme</option>
+                <option value="cacao-theme">Cacao Theme</option>
+            </select>
+        </li>
         <li class="author">By <a href="https://github.com/kerogs" target="_blank">Kerogs</a></li>
+
     </ul>
 </div>
 
+<!-- right click -->
 <script>
-    document.onclick = hideMenu;
+    document.onclick = function(e) {
+        // Si le clic est en dehors du contextMenu, cache-le
+        if (!e.target.closest("#contextMenu")) {
+            hideMenu();
+        }
+    };
+
     document.oncontextmenu = rightClick;
 
     function hideMenu() {
-        document.getElementById(
-            "contextMenu").style.display = "none"
+        document.getElementById("contextMenu").style.display = "none";
     }
 
     function rightClick(e) {
         e.preventDefault();
 
-        if (document.getElementById(
-            "contextMenu").style.display == "block")
-            hideMenu();
-        else {
-            let menu = document
-                .getElementById("contextMenu")
+        const menu = document.getElementById("contextMenu");
 
-            menu.style.display = 'block';
+        // Si le menu est déjà affiché, on le cache (optionnel)
+        if (menu.style.display === "block") {
+            hideMenu();
+        } else {
+            // Affiche et positionne le menu
+            menu.style.display = "block";
             menu.style.left = e.pageX + "px";
             menu.style.top = e.pageY + "px";
         }
     }
 </script>
+<!-- other -->
 <script src="./src/js/main.js"></script>
 <script src="./src/js/generator.js"></script>
 <script>

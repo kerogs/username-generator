@@ -163,15 +163,15 @@
 }
 *::-moz-selection {
   background-color: #fff;
-  color: #000;
+  color: #251d1d;
 }
 *::selection {
   background-color: #fff;
-  color: #000;
+  color: #251d1d;
 }
 
 body {
-  background-color: #000;
+  background-color: #251d1d;
   color: #fff;
 }
 
@@ -193,7 +193,7 @@ main .left {
   flex: 1;
   padding: 20px;
   border-radius: 20px;
-  background-color: #1a1a1a;
+  background-color: #423333;
   position: relative;
   overflow-y: auto;
 }
@@ -208,7 +208,7 @@ main .right.active {
   width: 300px;
   padding: 20px;
   border-radius: 20px;
-  background-color: #1a1a1a;
+  background-color: #423333;
 }
 main .right h1 {
   text-align: center;
@@ -262,10 +262,10 @@ main .right ul li:nth-child(1) {
   animation-delay: 0.1s;
 }
 main .right ul li:hover {
-  background-color: rgba(29, 155, 233, 0.2);
+  background-color: rgba(233, 29, 29, 0.2);
 }
 main .right ul li.active {
-  color: #1d9be9;
+  color: #e91d1d;
   letter-spacing: 3px;
 }
 
@@ -287,7 +287,7 @@ main .right ul li.active {
   z-index: 99;
 }
 .infotop a {
-  color: #1d9be9;
+  color: #e91d1d;
   text-decoration: none;
 }
 .infotop a:hover {
@@ -320,11 +320,11 @@ main .right ul li.active {
   height: 18px;
 }
 .formArea label:hover {
-  border: 1px solid #1d9be9;
+  border: 1px solid #e91d1d;
 }
 .formArea label.active {
-  border: 1px solid #1d9be9;
-  box-shadow: 0 0 10px #1d9be9;
+  border: 1px solid #e91d1d;
+  box-shadow: 0 0 10px #e91d1d;
 }
 .formArea label input[type=number] {
   border: none;
@@ -342,7 +342,7 @@ main .right ul li.active {
 }
 .formArea button {
   margin-top: 10px;
-  background-color: #1d9be9;
+  background-color: #e91d1d;
   color: #fff;
   border: none;
   padding: 6px 12px;
@@ -364,7 +364,7 @@ main .right ul li.active {
   text-decoration: none;
 }
 .formArea .github {
-  background-color: #e91d38;
+  background-color: #e9461d;
   display: none;
   transform: translateY(-100%);
 }
@@ -441,7 +441,7 @@ main .right ul li.active {
 .context-menu {
   position: absolute;
   text-align: center;
-  background-color: rgba(77, 77, 77, 0.1);
+  background-color: rgba(123, 96, 96, 0.1);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -460,7 +460,7 @@ main .right ul li.active {
 .context-menu ul a {
   cursor: pointer;
   text-decoration: none;
-  color: #1d9be9;
+  color: #e91d1d;
 }
 .context-menu ul li {
   padding: 6px 12px;
@@ -472,10 +472,10 @@ main .right ul li.active {
   text-align: center;
 }
 .context-menu ul li.github {
-  background-color: #e91d38;
+  background-color: #e9461d;
 }
 .context-menu ul li.github:hover {
-  background-color: #ee4b61;
+  background-color: #ee6c4b;
 }
 .context-menu ul li.themes {
   padding: unset;
@@ -486,11 +486,11 @@ main .right ul li.active {
   color: #fff;
   cursor: pointer;
   width: 100%;
-  background-color: #1d9be9;
+  background-color: #e91d1d;
   padding: 6px 12px;
 }
 .context-menu ul li.themes select option {
-  background-color: #137ec0;
+  background-color: #c01313;
   color: #fff;
   gap: 10px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=cacao-theme.style.css.map */
