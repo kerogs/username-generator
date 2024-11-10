@@ -231,7 +231,13 @@
                 `;
             } catch (error) {
                 console.error("Erreur lors de la génération des pseudos :", error);
-                document.querySelector("ul").textContent = "U.";
+
+                document.querySelector("#notificationMessage").classList.remove("noactive");
+                document.querySelector("#notificationMessage p").textContent = "An error has occurred.";
+                setTimeout(() => {
+                    document.querySelector("#notificationMessage").classList.remove("active");
+                    document.querySelector("#notificationMessage").classList.add("noactive");
+                }, 2000);
             }
 
             document.querySelector(".right")?.classList.add("active");
