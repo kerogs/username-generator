@@ -493,4 +493,50 @@ main .right ul li.active {
   background-color: #ee8a32;
   color: #271708;
   gap: 10px;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(242, 165, 97, 0.2);
+  color: #271708;
+  padding: 6px 12px;
+  border-radius: 5px;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  cursor: default;
+  transform: translate(-50%, -300%);
+  transition: 1.6s;
+}
+.notification.active {
+  animation: notificationSpawn 1.6s forwards;
+}
+.notification.noactive {
+  animation: notificationRemove 1.6s forwards;
+}
+
+@keyframes notificationSpawn {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+  50% {
+    transform: translate(-50%, 15%);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes notificationRemove {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 15%);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+  }
 }/*# sourceMappingURL=lowpoly-theme.style.css.map */

@@ -162,17 +162,17 @@
   transition: 0.4s;
 }
 *::-moz-selection {
-  background-color: #1f2029;
-  color: #eef4fc;
+  background-color: #1b1b1b;
+  color: hsl(227, 10%, 86%);
 }
 *::selection {
-  background-color: #1f2029;
-  color: #eef4fc;
+  background-color: #1b1b1b;
+  color: hsl(227, 10%, 86%);
 }
 
 body {
-  background-color: #eef4fc;
-  color: #1f2029;
+  background-color: hsl(227, 10%, 86%);
+  color: #1b1b1b;
 }
 
 main {
@@ -193,7 +193,7 @@ main .left {
   flex: 1;
   padding: 20px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #f4f4f6;
   position: relative;
   overflow-y: auto;
 }
@@ -208,7 +208,7 @@ main .right.active {
   width: 300px;
   padding: 20px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #f4f4f6;
 }
 main .right h1 {
   text-align: center;
@@ -262,10 +262,10 @@ main .right ul li:nth-child(1) {
   animation-delay: 0.1s;
 }
 main .right ul li:hover {
-  background-color: rgba(255, 121, 38, 0.2);
+  background-color: rgba(135, 162, 255, 0.2);
 }
 main .right ul li.active {
-  color: #ff7926;
+  color: #87A2FF;
   letter-spacing: 3px;
 }
 
@@ -287,7 +287,7 @@ main .right ul li.active {
   z-index: 99;
 }
 .infotop a {
-  color: #ff7926;
+  color: #87A2FF;
   text-decoration: none;
 }
 .infotop a:hover {
@@ -307,7 +307,7 @@ main .right ul li.active {
 .formArea label {
   cursor: pointer;
   padding: 6px 12px;
-  border: 1px solid #1f2029;
+  border: 1px solid #1b1b1b;
   transition: 0.2s;
   display: flex;
   align-items: center;
@@ -316,20 +316,20 @@ main .right ul li.active {
   font-size: 18px;
 }
 .formArea label svg {
-  fill: #1f2029;
+  fill: #1b1b1b;
   height: 18px;
 }
 .formArea label:hover {
-  border: 1px solid #ff7926;
+  border: 1px solid #87A2FF;
 }
 .formArea label.active {
-  border: 1px solid #ff7926;
-  box-shadow: 0 0 10px #ff7926;
+  border: 1px solid #87A2FF;
+  box-shadow: 0 0 10px #87A2FF;
 }
 .formArea label input[type=number] {
   border: none;
   background-color: transparent;
-  color: #1f2029;
+  color: #1b1b1b;
   padding: 0 12px;
   outline: none;
   font-size: 18px;
@@ -342,8 +342,8 @@ main .right ul li.active {
 }
 .formArea button {
   margin-top: 10px;
-  background-color: #ff7926;
-  color: #1f2029;
+  background-color: #87A2FF;
+  color: #1b1b1b;
   border: none;
   padding: 6px 12px;
   border-radius: 5px;
@@ -357,14 +357,14 @@ main .right ul li.active {
   width: 100%;
 }
 .formArea button svg {
-  fill: #1f2029;
+  fill: #1b1b1b;
   height: 18px;
 }
 .formArea a {
   text-decoration: none;
 }
 .formArea .github {
-  background-color: #ff3668;
+  background-color: #FFF4B5;
   display: none;
   transform: translateY(-100%);
 }
@@ -460,11 +460,11 @@ main .right ul li.active {
 .context-menu ul a {
   cursor: pointer;
   text-decoration: none;
-  color: #ff7926;
+  color: #87A2FF;
 }
 .context-menu ul li {
   padding: 6px 12px;
-  color: #1f2029;
+  color: #1b1b1b;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -472,10 +472,10 @@ main .right ul li.active {
   text-align: center;
 }
 .context-menu ul li.github {
-  background-color: #ff3668;
+  background-color: #FFF4B5;
 }
 .context-menu ul li.github:hover {
-  background-color: #ff698e;
+  background-color: #fffce8;
 }
 .context-menu ul li.themes {
   padding: unset;
@@ -483,15 +483,15 @@ main .right ul li.active {
 .context-menu ul li.themes select {
   background-color: transparent;
   border: none;
-  color: #1f2029;
+  color: #1b1b1b;
   cursor: pointer;
   width: 100%;
-  background-color: #ff7926;
+  background-color: #87A2FF;
   padding: 6px 12px;
 }
 .context-menu ul li.themes select option {
-  background-color: #f25d00;
-  color: #1f2029;
+  background-color: #547aff;
+  color: #1b1b1b;
   gap: 10px;
 }
 
@@ -500,8 +500,8 @@ main .right ul li.active {
   top: 20px;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: rgba(255, 121, 38, 0.2);
-  color: #1f2029;
+  background-color: rgba(135, 162, 255, 0.2);
+  color: #1b1b1b;
   padding: 6px 12px;
   border-radius: 5px;
   z-index: 9999;
@@ -539,4 +539,4 @@ main .right ul li.active {
   100% {
     transform: translate(-50%, -300%);
   }
-}/*# sourceMappingURL=kslabs-theme-light.style.css.map */
+}/*# sourceMappingURL=aeropolis-light-theme.style.css.map */

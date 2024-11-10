@@ -398,3 +398,52 @@ main{
         }
     }
 }
+
+.notification{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparentize($primary, .8);
+    color: $text;
+    padding: 6px 12px;
+    border-radius: 5px;
+    z-index: 9999;
+    backdrop-filter: blur(15px);
+    cursor: default;
+
+    transform: translate(-50%, -300%);
+    transition: 1.6s;
+
+    &.active{
+        animation: notificationSpawn 1.6s forwards;
+    }
+    
+    &.noactive{
+        animation: notificationRemove 1.6s forwards;
+    }
+}
+
+@keyframes notificationSpawn{
+    0%{
+        transform: translate(-50%, -300%);
+    }
+    50%{
+        transform: translate(-50%, 15%);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes notificationRemove{
+    0%{
+        transform: translate(-50%, 0);
+    }
+    50%{
+        transform: translate(-50%, 15%);
+    }
+    100%{
+        transform: translate(-50%, -300%);
+    }
+}

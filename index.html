@@ -44,6 +44,10 @@
 
 <body>
 
+    <div class="notification" id="notificationMessage">
+        <p></p>
+    </div>
+
     <main>
         <div class="infotop">
             <p>
@@ -124,8 +128,10 @@
                 <option value="classic-dark">Classic Dark</option>
                 <option value="kslabs-theme-dark">KsLabs Theme Dark</option>
                 <option value="kslabs-theme-light">KsLabs Theme Light</option>
-                <option value="lowpoly-theme">Low Poly Theme</option>
+                <option value="aeropolis-theme">Aeropolis Theme</option>
+                <option value="aeropolis-light-theme">Aeropolis Theme Light</option>
                 <option value="cacao-theme">Cacao Theme</option>
+                <option value="lowpoly-theme">Low Poly Theme</option>
             </select>
         </li>
         <li class="author">By <a href="https://github.com/kerogs" target="_blank">Kerogs</a></li>
@@ -239,8 +245,13 @@
                 navigator.clipboard.writeText(e.target.textContent);
 
                 e.target.classList.add("active");
+                document.querySelector("#notificationMessage").classList.add("active");
+                document.querySelector("#notificationMessage").classList.remove("noactive");
+                document.querySelector("#notificationMessage p").textContent = "Username copied";
                 setTimeout(() => {
                     e.target.classList.remove("active");
+                    document.querySelector("#notificationMessage").classList.remove("active");
+                    document.querySelector("#notificationMessage").classList.add("noactive");
                 }, 2000);
             }
         })

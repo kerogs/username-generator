@@ -162,17 +162,17 @@
   transition: 0.4s;
 }
 *::-moz-selection {
-  background-color: #fff;
-  color: #000;
+  background-color: #f0f0f0;
+  color: hsl(229, 27%, 8%);
 }
 *::selection {
-  background-color: #fff;
-  color: #000;
+  background-color: #f0f0f0;
+  color: hsl(229, 27%, 8%);
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: hsl(229, 27%, 8%);
+  color: #f0f0f0;
 }
 
 main {
@@ -193,7 +193,7 @@ main .left {
   flex: 1;
   padding: 20px;
   border-radius: 20px;
-  background-color: #1a1a1a;
+  background-color: #22263a;
   position: relative;
   overflow-y: auto;
 }
@@ -208,14 +208,14 @@ main .right.active {
   width: 300px;
   padding: 20px;
   border-radius: 20px;
-  background-color: #1a1a1a;
+  background-color: #22263a;
 }
 main .right h1 {
   text-align: center;
   font-size: 20px;
 }
 main .right hr {
-  border: 1px solid #cccccc;
+  border: 1px solid #bdbdbd;
   margin: 10px 30px;
 }
 main .right ul {
@@ -262,10 +262,10 @@ main .right ul li:nth-child(1) {
   animation-delay: 0.1s;
 }
 main .right ul li:hover {
-  background-color: rgba(29, 155, 233, 0.2);
+  background-color: rgba(135, 162, 255, 0.2);
 }
 main .right ul li.active {
-  color: #1d9be9;
+  color: #87A2FF;
   letter-spacing: 3px;
 }
 
@@ -287,7 +287,7 @@ main .right ul li.active {
   z-index: 99;
 }
 .infotop a {
-  color: #1d9be9;
+  color: #87A2FF;
   text-decoration: none;
 }
 .infotop a:hover {
@@ -307,7 +307,7 @@ main .right ul li.active {
 .formArea label {
   cursor: pointer;
   padding: 6px 12px;
-  border: 1px solid #fff;
+  border: 1px solid #f0f0f0;
   transition: 0.2s;
   display: flex;
   align-items: center;
@@ -316,20 +316,20 @@ main .right ul li.active {
   font-size: 18px;
 }
 .formArea label svg {
-  fill: #fff;
+  fill: #f0f0f0;
   height: 18px;
 }
 .formArea label:hover {
-  border: 1px solid #1d9be9;
+  border: 1px solid #87A2FF;
 }
 .formArea label.active {
-  border: 1px solid #1d9be9;
-  box-shadow: 0 0 10px #1d9be9;
+  border: 1px solid #87A2FF;
+  box-shadow: 0 0 10px #87A2FF;
 }
 .formArea label input[type=number] {
   border: none;
   background-color: transparent;
-  color: #fff;
+  color: #f0f0f0;
   padding: 0 12px;
   outline: none;
   font-size: 18px;
@@ -342,8 +342,8 @@ main .right ul li.active {
 }
 .formArea button {
   margin-top: 10px;
-  background-color: #1d9be9;
-  color: #fff;
+  background-color: #87A2FF;
+  color: #f0f0f0;
   border: none;
   padding: 6px 12px;
   border-radius: 5px;
@@ -357,14 +357,14 @@ main .right ul li.active {
   width: 100%;
 }
 .formArea button svg {
-  fill: #fff;
+  fill: #f0f0f0;
   height: 18px;
 }
 .formArea a {
   text-decoration: none;
 }
 .formArea .github {
-  background-color: #e91d38;
+  background-color: #ff4848;
   display: none;
   transform: translateY(-100%);
 }
@@ -441,7 +441,7 @@ main .right ul li.active {
 .context-menu {
   position: absolute;
   text-align: center;
-  background-color: rgba(77, 77, 77, 0.1);
+  background-color: rgba(71, 80, 123, 0.1);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -460,11 +460,11 @@ main .right ul li.active {
 .context-menu ul a {
   cursor: pointer;
   text-decoration: none;
-  color: #1d9be9;
+  color: #87A2FF;
 }
 .context-menu ul li {
   padding: 6px 12px;
-  color: #fff;
+  color: #f0f0f0;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -472,10 +472,10 @@ main .right ul li.active {
   text-align: center;
 }
 .context-menu ul li.github {
-  background-color: #e91d38;
+  background-color: #ff4848;
 }
 .context-menu ul li.github:hover {
-  background-color: #ee4b61;
+  background-color: #ff7b7b;
 }
 .context-menu ul li.themes {
   padding: unset;
@@ -483,14 +483,60 @@ main .right ul li.active {
 .context-menu ul li.themes select {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #f0f0f0;
   cursor: pointer;
   width: 100%;
-  background-color: #1d9be9;
+  background-color: #87A2FF;
   padding: 6px 12px;
 }
 .context-menu ul li.themes select option {
-  background-color: #137ec0;
-  color: #fff;
+  background-color: #547aff;
+  color: #f0f0f0;
   gap: 10px;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(135, 162, 255, 0.2);
+  color: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  cursor: default;
+  transform: translate(-50%, -300%);
+  transition: 1.6s;
+}
+.notification.active {
+  animation: notificationSpawn 1.6s forwards;
+}
+.notification.noactive {
+  animation: notificationRemove 1.6s forwards;
+}
+
+@keyframes notificationSpawn {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+  50% {
+    transform: translate(-50%, 15%);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes notificationRemove {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 15%);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+  }
 }/*# sourceMappingURL=style.css.map */
