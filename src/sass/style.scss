@@ -53,6 +53,7 @@ main{
         transition: .8s;
         width: 0;
         overflow-y: auto;
+        overflow-x: hidden;
         &.active{
             width: 300px;
             padding: 20px;
@@ -237,6 +238,10 @@ main{
         &.active{
             display: block;
             animation: githubSpawn .4s forwards;
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
     }
 

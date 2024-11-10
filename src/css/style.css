@@ -201,6 +201,7 @@ main .right {
   transition: 0.8s;
   width: 0;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 main .right.active {
   width: 300px;
@@ -369,6 +370,9 @@ main .right ul li.active {
 .formArea .github.active {
   display: block;
   animation: githubSpawn 0.4s forwards;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .formArea button:hover {
   opacity: 0.8;
