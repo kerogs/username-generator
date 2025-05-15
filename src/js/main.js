@@ -1,6 +1,6 @@
 console.log("main.ts -> OK");
 const versionShowJS = document.querySelectorAll(".versionShowJS");
-const version = "v1.4";
+const version = "v1.5";
 versionShowJS.forEach(e => {
     e.innerHTML = version;
 });

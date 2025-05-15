@@ -29,7 +29,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 98vw;
-    height: 94vh;
+    height: 94dvh;
 
     display: flex;
 
@@ -289,7 +289,7 @@ main{
     main{
         flex-direction: column;
 
-        height: 98vh;
+        height: 98dvh;
 
         &.active{
             gap: 10px;
